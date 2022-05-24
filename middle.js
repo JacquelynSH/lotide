@@ -26,24 +26,24 @@ const assertArraysEqual = function(actual, expected) {
 
 const middle = function(array) {
 
-// condition determining if the length of array is 2 or less, return an empty array.
-if (array.length <= 2) {
-  return [];
-}
-// declaring variable "index"
-// making index equal the length of array divided in half and rounded down.
-let index = Math.floor(array.length / 2);
+  // condition determining if the length of array is 2 or less, return an empty array.
+  if (array.length <= 2) {
+    return [];
+  }
+  // declaring variable "index"
+  // making index equal the length of array divided in half and rounded down.
+  let index = Math.floor(array.length / 2);
 
-// condition to determin if the length of array is an even number using the modulo operator
-if (array.length % 2 === 0){
+  // condition to determin if the length of array is an even number using the modulo operator
+  if (array.length % 2 === 0) {
   // if condition evaluates true.... return
   //
- return [array[index - 1], array[index]];
-}
-// condition to determin if the length of array is an odd number using the modulo operator
-if (array.length % 2 === 1) {
- return array[index];
-}
+    return [array[index - 1], array[index]];
+  }
+  // condition to determin if the length of array is an odd number using the modulo operator
+  if (array.length % 2 === 1) {
+    return array[index];
+  }
 };
 
 
