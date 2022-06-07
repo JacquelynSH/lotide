@@ -1,25 +1,5 @@
 
 
-const eqArrays = function(array1, array2) {
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) return false;
-  }
-  return true;
-};
-
-const assertArraysEqual = function(actual, expected) {
-  // console assert + compare actual and expect to determin if they are the same
-  // console.assert(actual !== expected)
-  if (actual === expected) {
-    console.log('🐙🐡🐬' + " Assertion Passed!");
-  } else {
-    console.log('👻👻👻' + " Assertion Failed OH NO");
-  }
-};
-
 // arrrays with one or two elements, return empty array
 // arrays with odd numbver of elemnts, return a single middle array ex [1, 2, 3] --> [3]
 // arrrays with even numbers of elements return the two centre elements
@@ -47,17 +27,5 @@ const middle = function(array) {
 };
 
 
-
-// //should return []
-console.log(middle([1]));
-console.log(middle([1, 2]));
-// //should return [2] and [3]
-console.log(middle([1, 2, 3]));
-console.log(middle([1, 2, 3, 4, 5]));
-//should return [2, 3] and [3, 4]
-console.log(middle([1, 2, 3, 4]));
-console.log(middle([1, 2, 3, 4, 5, 6]));
-
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-
+module.exports = middle;
 
