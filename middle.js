@@ -1,9 +1,6 @@
-
-
 // arrrays with one or two elements, return empty array
 // arrays with odd numbver of elemnts, return a single middle array ex [1, 2, 3] --> [3]
 // arrrays with even numbers of elements return the two centre elements
-
 const middle = function(array) {
 
   // condition determining if the length of array is 2 or less, return an empty array.
@@ -22,10 +19,9 @@ const middle = function(array) {
   }
   // condition to determin if the length of array is an odd number using the modulo operator
   if (array.length % 2 === 1) {
-    return array[index];
+    return [array[index]];
   }
 };
-
 
 module.exports = middle;
 
