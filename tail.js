@@ -1,6 +1,6 @@
-const assertEqual = require('./assertEqual')
+const assertEqual = require('./assertEqual');
 
-  // return the all elements in the array passed index 0
+// return the all elements in the array passed index 0
 const tail = function(array) {
   if (array.length <= 1) {
     return [];
