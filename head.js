@@ -6,5 +6,5 @@ const head = function(array){
   return array[0];
   // all should return assertion passed!
   };
-
+//
   module.exports = head;
